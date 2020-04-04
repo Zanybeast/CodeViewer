@@ -1,0 +1,16 @@
+PODS:
+  - Highlightr (2.1.0)
+
+DEPENDENCIES:
+  - Highlightr
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Highlightr
+
+SPEC CHECKSUMS:
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
+
+PODFILE CHECKSUM: 73e32f611225f635eedb39de4a05578800c7626a
+
+COCOAPODS: 1.9.0
