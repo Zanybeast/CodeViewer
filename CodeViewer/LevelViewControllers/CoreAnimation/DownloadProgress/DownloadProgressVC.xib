@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadProgressVC" customModule="CodeViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="cGo-FG-YGP" id="wBK-x6-jlY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-FG-YGP" customClass="DownloadProgressView" customModule="CodeViewer" customModuleProvider="target">
+                    <rect key="frame" x="82" y="64" width="250" height="250"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="YNz-7D-I1W"/>
+                        <constraint firstAttribute="width" constant="250" id="qTa-lq-SK2"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the slider to simulate the download animation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvE-C4-MtO">
+                    <rect key="frame" x="20" y="334" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cX3-Hz-Ydp">
+                    <rect key="frame" x="18" y="405" width="378" height="31"/>
+                    <connections>
+                        <action selector="slider:" destination="-1" eventType="valueChanged" id="6GY-Zr-gZf"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="cGo-FG-YGP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0wW-6T-EkK"/>
+                <constraint firstItem="yvE-C4-MtO" firstAttribute="top" secondItem="cGo-FG-YGP" secondAttribute="bottom" constant="20" id="3ml-6a-RPK"/>
+                <constraint firstItem="cX3-Hz-Ydp" firstAttribute="top" secondItem="yvE-C4-MtO" secondAttribute="bottom" constant="30" id="8C8-XI-8EU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cX3-Hz-Ydp" secondAttribute="trailing" constant="20" id="Cbi-xm-pTD"/>
+                <constraint firstItem="yvE-C4-MtO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GmW-34-oq0"/>
+                <constraint firstItem="cGo-FG-YGP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="HPc-fV-HAc"/>
+                <constraint firstAttribute="trailing" secondItem="yvE-C4-MtO" secondAttribute="trailing" constant="20" id="MCJ-fW-uzm"/>
+                <constraint firstItem="cX3-Hz-Ydp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WMF-K9-Kn6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="146.65178571428569"/>
+        </view>
+    </objects>
+</document>

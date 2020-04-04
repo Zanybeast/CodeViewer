@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,33 @@
 		C3042A4324380CD5009AF6DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3042A4124380CD5009AF6DB /* Main.storyboard */; };
 		C3042A4524380CD6009AF6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3042A4424380CD6009AF6DB /* Assets.xcassets */; };
 		C3042A4824380CD6009AF6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3042A4624380CD6009AF6DB /* LaunchScreen.storyboard */; };
+		C3042A512438116E009AF6DB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3042A502438116E009AF6DB /* Default-568h@2x.png */; };
+		C36841462438191C00ADE33E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841442438191C00ADE33E /* MainTableViewCell.swift */; };
+		C36841472438191C00ADE33E /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841452438191C00ADE33E /* MainTableViewCell.xib */; };
+		C368415A2438250000ADE33E /* SecondLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36841592438250000ADE33E /* SecondLevel.storyboard */; };
+		C368415C2438251900ADE33E /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368415B2438251900ADE33E /* SecondLevelViewController.swift */; };
+		C368415E24382B8600ADE33E /* mainTableViewContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = C368415D24382B8600ADE33E /* mainTableViewContent.plist */; };
+		C3684160243831BB00ADE33E /* SecondLevelContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = C368415F243831BB00ADE33E /* SecondLevelContent.plist */; };
+		C3684167243836DB00ADE33E /* SnowSurroundScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3684165243836DB00ADE33E /* SnowSurroundScreenVC.swift */; };
+		C3684168243836DB00ADE33E /* SnowSurroundScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3684166243836DB00ADE33E /* SnowSurroundScreenVC.xib */; };
+		C368416B2438375D00ADE33E /* SnowMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368416A2438375D00ADE33E /* SnowMainView.swift */; };
+		C368416D2438501800ADE33E /* CodeViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368416C2438501800ADE33E /* CodeViewerViewController.swift */; };
+		C368416F2438502100ADE33E /* CodeViewerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C368416E2438502100ADE33E /* CodeViewerViewController.storyboard */; };
+		C3684172243854B500ADE33E /* Dictionary+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3684171243854B500ADE33E /* Dictionary+Tools.swift */; };
+		C36841782438648600ADE33E /* CodePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841762438648600ADE33E /* CodePageViewController.swift */; };
+		C36841792438648600ADE33E /* CodePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841772438648600ADE33E /* CodePageViewController.xib */; };
+		C368417F2438808E00ADE33E /* PieGraphicNHistogramVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368417D2438808E00ADE33E /* PieGraphicNHistogramVC.swift */; };
+		C36841802438808E00ADE33E /* PieGraphicNHistogramVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C368417E2438808E00ADE33E /* PieGraphicNHistogramVC.xib */; };
+		C36841832438816600ADE33E /* PieGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841822438816600ADE33E /* PieGraphicView.swift */; };
+		C36841852438817100ADE33E /* HistgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841842438817100ADE33E /* HistgramView.swift */; };
+		C3684187243881CD00ADE33E /* Array+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3684186243881CD00ADE33E /* Array+Tools.swift */; };
+		C368418924388AB800ADE33E /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368418824388AB800ADE33E /* UIColor+Tools.swift */; };
+		C368418B24388CC300ADE33E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368418A24388CC300ADE33E /* BaseViewController.swift */; };
+		C368418D2438928900ADE33E /* UIAlertController+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368418C2438928900ADE33E /* UIAlertController+Tools.swift */; };
+		C36841902438ABF400ADE33E /* DownloadProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368418E2438ABF400ADE33E /* DownloadProgressVC.swift */; };
+		C36841912438ABF400ADE33E /* DownloadProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */; };
+		C36841942438ADE800ADE33E /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841932438ADE800ADE33E /* DownloadProgressView.swift */; };
+		C368419B2438CA0A00ADE33E /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */; };
 		E05DB8C798A9B1B0FE1FE182 /* Pods_CodeViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FB3F9AB8D02573E5BFB8C7 /* Pods_CodeViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +55,33 @@
 		C3042A4424380CD6009AF6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3042A4724380CD6009AF6DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3042A4924380CD6009AF6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3042A502438116E009AF6DB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C36841442438191C00ADE33E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C36841452438191C00ADE33E /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		C36841592438250000ADE33E /* SecondLevel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondLevel.storyboard; sourceTree = "<group>"; };
+		C368415B2438251900ADE33E /* SecondLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelViewController.swift; sourceTree = "<group>"; };
+		C368415D24382B8600ADE33E /* mainTableViewContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mainTableViewContent.plist; sourceTree = "<group>"; };
+		C368415F243831BB00ADE33E /* SecondLevelContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecondLevelContent.plist; sourceTree = "<group>"; };
+		C3684165243836DB00ADE33E /* SnowSurroundScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSurroundScreenVC.swift; sourceTree = "<group>"; };
+		C3684166243836DB00ADE33E /* SnowSurroundScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnowSurroundScreenVC.xib; sourceTree = "<group>"; };
+		C368416A2438375D00ADE33E /* SnowMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowMainView.swift; sourceTree = "<group>"; };
+		C368416C2438501800ADE33E /* CodeViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewerViewController.swift; sourceTree = "<group>"; };
+		C368416E2438502100ADE33E /* CodeViewerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CodeViewerViewController.storyboard; sourceTree = "<group>"; };
+		C3684171243854B500ADE33E /* Dictionary+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Tools.swift"; sourceTree = "<group>"; };
+		C36841762438648600ADE33E /* CodePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePageViewController.swift; sourceTree = "<group>"; };
+		C36841772438648600ADE33E /* CodePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodePageViewController.xib; sourceTree = "<group>"; };
+		C368417D2438808E00ADE33E /* PieGraphicNHistogramVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphicNHistogramVC.swift; sourceTree = "<group>"; };
+		C368417E2438808E00ADE33E /* PieGraphicNHistogramVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieGraphicNHistogramVC.xib; sourceTree = "<group>"; };
+		C36841822438816600ADE33E /* PieGraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphicView.swift; sourceTree = "<group>"; };
+		C36841842438817100ADE33E /* HistgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistgramView.swift; sourceTree = "<group>"; };
+		C3684186243881CD00ADE33E /* Array+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Tools.swift"; sourceTree = "<group>"; };
+		C368418824388AB800ADE33E /* UIColor+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
+		C368418A24388CC300ADE33E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C368418C2438928900ADE33E /* UIAlertController+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Tools.swift"; sourceTree = "<group>"; };
+		C368418E2438ABF400ADE33E /* DownloadProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressVC.swift; sourceTree = "<group>"; };
+		C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadProgressVC.xib; sourceTree = "<group>"; };
+		C36841932438ADE800ADE33E /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressView.swift; sourceTree = "<group>"; };
+		C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +102,6 @@
 				3066DE705C9AD0B86D0895F0 /* Pods-CodeViewer.debug.xcconfig */,
 				80796BFB97D58E773F6E99AE /* Pods-CodeViewer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,11 +138,110 @@
 				C3042A3D24380CD5009AF6DB /* SceneDelegate.swift */,
 				C3042A3F24380CD5009AF6DB /* ViewController.swift */,
 				C3042A4124380CD5009AF6DB /* Main.storyboard */,
+				C368414E24381D5A00ADE33E /* LevelViewControllers */,
+				C36841492438192D00ADE33E /* BaseView */,
+				C3684173243855A200ADE33E /* ToolsAndExtension */,
+				C3042A4F2438111E009AF6DB /* Supporting Files */,
+				C368415D24382B8600ADE33E /* mainTableViewContent.plist */,
+				C368415F243831BB00ADE33E /* SecondLevelContent.plist */,
+			);
+			path = CodeViewer;
+			sourceTree = "<group>";
+		};
+		C3042A4F2438111E009AF6DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3042A502438116E009AF6DB /* Default-568h@2x.png */,
 				C3042A4424380CD6009AF6DB /* Assets.xcassets */,
 				C3042A4624380CD6009AF6DB /* LaunchScreen.storyboard */,
 				C3042A4924380CD6009AF6DB /* Info.plist */,
 			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C36841492438192D00ADE33E /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				C36841442438191C00ADE33E /* MainTableViewCell.swift */,
+				C36841452438191C00ADE33E /* MainTableViewCell.xib */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		C368414E24381D5A00ADE33E /* LevelViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C36841592438250000ADE33E /* SecondLevel.storyboard */,
+				C368415B2438251900ADE33E /* SecondLevelViewController.swift */,
+				C368418A24388CC300ADE33E /* BaseViewController.swift */,
+				C36841702438502B00ADE33E /* CodeViewer */,
+				C368417A2438761D00ADE33E /* CoreAnimation */,
+			);
+			path = LevelViewControllers;
+			sourceTree = "<group>";
+		};
+		C36841692438372F00ADE33E /* SnowSurroundScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C3684165243836DB00ADE33E /* SnowSurroundScreenVC.swift */,
+				C368416A2438375D00ADE33E /* SnowMainView.swift */,
+				C3684166243836DB00ADE33E /* SnowSurroundScreenVC.xib */,
+			);
+			path = SnowSurroundScreen;
+			sourceTree = "<group>";
+		};
+		C36841702438502B00ADE33E /* CodeViewer */ = {
+			isa = PBXGroup;
+			children = (
+				C368416C2438501800ADE33E /* CodeViewerViewController.swift */,
+				C36841762438648600ADE33E /* CodePageViewController.swift */,
+				C36841772438648600ADE33E /* CodePageViewController.xib */,
+				C368416E2438502100ADE33E /* CodeViewerViewController.storyboard */,
+			);
 			path = CodeViewer;
+			sourceTree = "<group>";
+		};
+		C3684173243855A200ADE33E /* ToolsAndExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C3684171243854B500ADE33E /* Dictionary+Tools.swift */,
+				C3684186243881CD00ADE33E /* Array+Tools.swift */,
+				C368418824388AB800ADE33E /* UIColor+Tools.swift */,
+				C368418C2438928900ADE33E /* UIAlertController+Tools.swift */,
+				C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */,
+			);
+			path = ToolsAndExtension;
+			sourceTree = "<group>";
+		};
+		C368417A2438761D00ADE33E /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C36841692438372F00ADE33E /* SnowSurroundScreen */,
+				C36841812438809E00ADE33E /* PieGraphicNHistogram */,
+				C36841922438ABFA00ADE33E /* DownloadProgress */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		C36841812438809E00ADE33E /* PieGraphicNHistogram */ = {
+			isa = PBXGroup;
+			children = (
+				C368417D2438808E00ADE33E /* PieGraphicNHistogramVC.swift */,
+				C36841822438816600ADE33E /* PieGraphicView.swift */,
+				C36841842438817100ADE33E /* HistgramView.swift */,
+				C368417E2438808E00ADE33E /* PieGraphicNHistogramVC.xib */,
+			);
+			path = PieGraphicNHistogram;
+			sourceTree = "<group>";
+		};
+		C36841922438ABFA00ADE33E /* DownloadProgress */ = {
+			isa = PBXGroup;
+			children = (
+				C368418E2438ABF400ADE33E /* DownloadProgressVC.swift */,
+				C36841932438ADE800ADE33E /* DownloadProgressView.swift */,
+				C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */,
+			);
+			path = DownloadProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +304,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3684168243836DB00ADE33E /* SnowSurroundScreenVC.xib in Resources */,
+				C368415E24382B8600ADE33E /* mainTableViewContent.plist in Resources */,
+				C3684160243831BB00ADE33E /* SecondLevelContent.plist in Resources */,
 				C3042A4824380CD6009AF6DB /* LaunchScreen.storyboard in Resources */,
+				C3042A512438116E009AF6DB /* Default-568h@2x.png in Resources */,
 				C3042A4524380CD6009AF6DB /* Assets.xcassets in Resources */,
+				C368416F2438502100ADE33E /* CodeViewerViewController.storyboard in Resources */,
 				C3042A4324380CD5009AF6DB /* Main.storyboard in Resources */,
+				C36841802438808E00ADE33E /* PieGraphicNHistogramVC.xib in Resources */,
+				C36841912438ABF400ADE33E /* DownloadProgressVC.xib in Resources */,
+				C36841472438191C00ADE33E /* MainTableViewCell.xib in Resources */,
+				C36841792438648600ADE33E /* CodePageViewController.xib in Resources */,
+				C368415A2438250000ADE33E /* SecondLevel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +369,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36841942438ADE800ADE33E /* DownloadProgressView.swift in Sources */,
+				C3684172243854B500ADE33E /* Dictionary+Tools.swift in Sources */,
+				C368417F2438808E00ADE33E /* PieGraphicNHistogramVC.swift in Sources */,
 				C3042A4024380CD5009AF6DB /* ViewController.swift in Sources */,
 				C3042A3C24380CD5009AF6DB /* AppDelegate.swift in Sources */,
+				C368415C2438251900ADE33E /* SecondLevelViewController.swift in Sources */,
+				C368416B2438375D00ADE33E /* SnowMainView.swift in Sources */,
+				C368418924388AB800ADE33E /* UIColor+Tools.swift in Sources */,
+				C368418D2438928900ADE33E /* UIAlertController+Tools.swift in Sources */,
+				C36841832438816600ADE33E /* PieGraphicView.swift in Sources */,
+				C3684167243836DB00ADE33E /* SnowSurroundScreenVC.swift in Sources */,
+				C368416D2438501800ADE33E /* CodeViewerViewController.swift in Sources */,
+				C36841902438ABF400ADE33E /* DownloadProgressVC.swift in Sources */,
+				C36841462438191C00ADE33E /* MainTableViewCell.swift in Sources */,
+				C36841782438648600ADE33E /* CodePageViewController.swift in Sources */,
 				C3042A3E24380CD5009AF6DB /* SceneDelegate.swift in Sources */,
+				C368418B24388CC300ADE33E /* BaseViewController.swift in Sources */,
+				C36841852438817100ADE33E /* HistgramView.swift in Sources */,
+				C3684187243881CD00ADE33E /* Array+Tools.swift in Sources */,
+				C368419B2438CA0A00ADE33E /* UIImage+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,13 +534,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Y899647SW;
-				INFOPLIST_FILE = CodeViewer/Info.plist;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "CodeViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengchaofring.CodeViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zengzhao.CodeViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,13 +553,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Y899647SW;
-				INFOPLIST_FILE = CodeViewer/Info.plist;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "CodeViewer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengchaofring.CodeViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zengzhao.CodeViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
