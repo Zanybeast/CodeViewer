@@ -18,7 +18,6 @@
 		C36841472438191C00ADE33E /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841452438191C00ADE33E /* MainTableViewCell.xib */; };
 		C368415A2438250000ADE33E /* SecondLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36841592438250000ADE33E /* SecondLevel.storyboard */; };
 		C368415C2438251900ADE33E /* SecondLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368415B2438251900ADE33E /* SecondLevelViewController.swift */; };
-		C368415E24382B8600ADE33E /* mainTableViewContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = C368415D24382B8600ADE33E /* mainTableViewContent.plist */; };
 		C3684160243831BB00ADE33E /* SecondLevelContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = C368415F243831BB00ADE33E /* SecondLevelContent.plist */; };
 		C3684167243836DB00ADE33E /* SnowSurroundScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3684165243836DB00ADE33E /* SnowSurroundScreenVC.swift */; };
 		C3684168243836DB00ADE33E /* SnowSurroundScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3684166243836DB00ADE33E /* SnowSurroundScreenVC.xib */; };
@@ -40,6 +39,23 @@
 		C36841912438ABF400ADE33E /* DownloadProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */; };
 		C36841942438ADE800ADE33E /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841932438ADE800ADE33E /* DownloadProgressView.swift */; };
 		C368419B2438CA0A00ADE33E /* UIImage+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */; };
+		C368419D243AD7FC00ADE33E /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368419C243AD7FC00ADE33E /* ContentManager.swift */; };
+		C36841A0243AF83A00ADE33E /* MainContentDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368419F243AF83A00ADE33E /* MainContentDictionary.swift */; };
+		C36841A3243AF91B00ADE33E /* SnowSurroundScreenDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841A2243AF91B00ADE33E /* SnowSurroundScreenDict.swift */; };
+		C36841A5243B00DD00ADE33E /* BaseDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841A4243B00DC00ADE33E /* BaseDict.swift */; };
+		C36841A7243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841A6243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift */; };
+		C36841A9243B0C2100ADE33E /* DownloadProgressDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841A8243B0C2100ADE33E /* DownloadProgressDict.swift */; };
+		C36841B0243B5FA400ADE33E /* CutImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841AE243B5FA400ADE33E /* CutImageVC.swift */; };
+		C36841B1243B5FA400ADE33E /* CutImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841AF243B5FA400ADE33E /* CutImageVC.xib */; };
+		C36841B5243B7E1B00ADE33E /* CutImageDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841B4243B7E1B00ADE33E /* CutImageDict.swift */; };
+		C36841B8243BF61B00ADE33E /* EraseImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841B6243BF61B00ADE33E /* EraseImageVC.swift */; };
+		C36841B9243BF61B00ADE33E /* EraseImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841B7243BF61B00ADE33E /* EraseImageVC.xib */; };
+		C36841BC243BF98900ADE33E /* EraseImageDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841BB243BF98900ADE33E /* EraseImageDict.swift */; };
+		C36841BF243C02AB00ADE33E /* GestureUnlockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841BD243C02AB00ADE33E /* GestureUnlockVC.swift */; };
+		C36841C0243C02AB00ADE33E /* GestureUnlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */; };
+		C36841C3243C05FF00ADE33E /* UnLockBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841C2243C05FF00ADE33E /* UnLockBackGroundView.swift */; };
+		C36841C5243C070700ADE33E /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841C4243C070700ADE33E /* LockView.swift */; };
+		C3C6CD75243C3C01008F3EE7 /* GestureUnlockDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */; };
 		E05DB8C798A9B1B0FE1FE182 /* Pods_CodeViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FB3F9AB8D02573E5BFB8C7 /* Pods_CodeViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +76,6 @@
 		C36841452438191C00ADE33E /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		C36841592438250000ADE33E /* SecondLevel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondLevel.storyboard; sourceTree = "<group>"; };
 		C368415B2438251900ADE33E /* SecondLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelViewController.swift; sourceTree = "<group>"; };
-		C368415D24382B8600ADE33E /* mainTableViewContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mainTableViewContent.plist; sourceTree = "<group>"; };
 		C368415F243831BB00ADE33E /* SecondLevelContent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecondLevelContent.plist; sourceTree = "<group>"; };
 		C3684165243836DB00ADE33E /* SnowSurroundScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSurroundScreenVC.swift; sourceTree = "<group>"; };
 		C3684166243836DB00ADE33E /* SnowSurroundScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnowSurroundScreenVC.xib; sourceTree = "<group>"; };
@@ -82,6 +97,23 @@
 		C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadProgressVC.xib; sourceTree = "<group>"; };
 		C36841932438ADE800ADE33E /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressView.swift; sourceTree = "<group>"; };
 		C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tools.swift"; sourceTree = "<group>"; };
+		C368419C243AD7FC00ADE33E /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		C368419F243AF83A00ADE33E /* MainContentDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentDictionary.swift; sourceTree = "<group>"; };
+		C36841A2243AF91B00ADE33E /* SnowSurroundScreenDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSurroundScreenDict.swift; sourceTree = "<group>"; };
+		C36841A4243B00DC00ADE33E /* BaseDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDict.swift; sourceTree = "<group>"; };
+		C36841A6243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieGraphicNHistogramDict.swift; sourceTree = "<group>"; };
+		C36841A8243B0C2100ADE33E /* DownloadProgressDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressDict.swift; sourceTree = "<group>"; };
+		C36841AE243B5FA400ADE33E /* CutImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutImageVC.swift; sourceTree = "<group>"; };
+		C36841AF243B5FA400ADE33E /* CutImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CutImageVC.xib; sourceTree = "<group>"; };
+		C36841B4243B7E1B00ADE33E /* CutImageDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutImageDict.swift; sourceTree = "<group>"; };
+		C36841B6243BF61B00ADE33E /* EraseImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseImageVC.swift; sourceTree = "<group>"; };
+		C36841B7243BF61B00ADE33E /* EraseImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EraseImageVC.xib; sourceTree = "<group>"; };
+		C36841BB243BF98900ADE33E /* EraseImageDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseImageDict.swift; sourceTree = "<group>"; };
+		C36841BD243C02AB00ADE33E /* GestureUnlockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureUnlockVC.swift; sourceTree = "<group>"; };
+		C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureUnlockVC.xib; sourceTree = "<group>"; };
+		C36841C2243C05FF00ADE33E /* UnLockBackGroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnLockBackGroundView.swift; sourceTree = "<group>"; };
+		C36841C4243C070700ADE33E /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureUnlockDict.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +170,11 @@
 				C3042A3D24380CD5009AF6DB /* SceneDelegate.swift */,
 				C3042A3F24380CD5009AF6DB /* ViewController.swift */,
 				C3042A4124380CD5009AF6DB /* Main.storyboard */,
+				C368419E243AD80300ADE33E /* Model */,
 				C368414E24381D5A00ADE33E /* LevelViewControllers */,
 				C36841492438192D00ADE33E /* BaseView */,
 				C3684173243855A200ADE33E /* ToolsAndExtension */,
 				C3042A4F2438111E009AF6DB /* Supporting Files */,
-				C368415D24382B8600ADE33E /* mainTableViewContent.plist */,
 				C368415F243831BB00ADE33E /* SecondLevelContent.plist */,
 			);
 			path = CodeViewer;
@@ -219,6 +251,9 @@
 				C36841692438372F00ADE33E /* SnowSurroundScreen */,
 				C36841812438809E00ADE33E /* PieGraphicNHistogram */,
 				C36841922438ABFA00ADE33E /* DownloadProgress */,
+				C36841B2243B5FAA00ADE33E /* CutImage */,
+				C36841BA243BF62000ADE33E /* EraseImage */,
+				C36841C1243C02B000ADE33E /* GestureUnlock */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -242,6 +277,67 @@
 				C368418F2438ABF400ADE33E /* DownloadProgressVC.xib */,
 			);
 			path = DownloadProgress;
+			sourceTree = "<group>";
+		};
+		C368419E243AD80300ADE33E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C368419C243AD7FC00ADE33E /* ContentManager.swift */,
+				C36841A1243AF8CE00ADE33E /* Dictionaries */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C36841A1243AF8CE00ADE33E /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				C36841A4243B00DC00ADE33E /* BaseDict.swift */,
+				C368419F243AF83A00ADE33E /* MainContentDictionary.swift */,
+				C36841B3243B7DFA00ADE33E /* CoreAnimationDict */,
+			);
+			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		C36841B2243B5FAA00ADE33E /* CutImage */ = {
+			isa = PBXGroup;
+			children = (
+				C36841AE243B5FA400ADE33E /* CutImageVC.swift */,
+				C36841AF243B5FA400ADE33E /* CutImageVC.xib */,
+			);
+			path = CutImage;
+			sourceTree = "<group>";
+		};
+		C36841B3243B7DFA00ADE33E /* CoreAnimationDict */ = {
+			isa = PBXGroup;
+			children = (
+				C36841A2243AF91B00ADE33E /* SnowSurroundScreenDict.swift */,
+				C36841A6243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift */,
+				C36841A8243B0C2100ADE33E /* DownloadProgressDict.swift */,
+				C36841B4243B7E1B00ADE33E /* CutImageDict.swift */,
+				C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */,
+				C36841BB243BF98900ADE33E /* EraseImageDict.swift */,
+			);
+			path = CoreAnimationDict;
+			sourceTree = "<group>";
+		};
+		C36841BA243BF62000ADE33E /* EraseImage */ = {
+			isa = PBXGroup;
+			children = (
+				C36841B6243BF61B00ADE33E /* EraseImageVC.swift */,
+				C36841B7243BF61B00ADE33E /* EraseImageVC.xib */,
+			);
+			path = EraseImage;
+			sourceTree = "<group>";
+		};
+		C36841C1243C02B000ADE33E /* GestureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				C36841BD243C02AB00ADE33E /* GestureUnlockVC.swift */,
+				C36841C2243C05FF00ADE33E /* UnLockBackGroundView.swift */,
+				C36841C4243C070700ADE33E /* LockView.swift */,
+				C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */,
+			);
+			path = GestureUnlock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,18 +401,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3684168243836DB00ADE33E /* SnowSurroundScreenVC.xib in Resources */,
-				C368415E24382B8600ADE33E /* mainTableViewContent.plist in Resources */,
 				C3684160243831BB00ADE33E /* SecondLevelContent.plist in Resources */,
 				C3042A4824380CD6009AF6DB /* LaunchScreen.storyboard in Resources */,
 				C3042A512438116E009AF6DB /* Default-568h@2x.png in Resources */,
 				C3042A4524380CD6009AF6DB /* Assets.xcassets in Resources */,
 				C368416F2438502100ADE33E /* CodeViewerViewController.storyboard in Resources */,
+				C36841B1243B5FA400ADE33E /* CutImageVC.xib in Resources */,
 				C3042A4324380CD5009AF6DB /* Main.storyboard in Resources */,
 				C36841802438808E00ADE33E /* PieGraphicNHistogramVC.xib in Resources */,
 				C36841912438ABF400ADE33E /* DownloadProgressVC.xib in Resources */,
 				C36841472438191C00ADE33E /* MainTableViewCell.xib in Resources */,
+				C36841B9243BF61B00ADE33E /* EraseImageVC.xib in Resources */,
 				C36841792438648600ADE33E /* CodePageViewController.xib in Resources */,
 				C368415A2438250000ADE33E /* SecondLevel.storyboard in Resources */,
+				C36841C0243C02AB00ADE33E /* GestureUnlockVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,25 +467,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36841A9243B0C2100ADE33E /* DownloadProgressDict.swift in Sources */,
+				C36841A5243B00DD00ADE33E /* BaseDict.swift in Sources */,
+				C36841A0243AF83A00ADE33E /* MainContentDictionary.swift in Sources */,
 				C36841942438ADE800ADE33E /* DownloadProgressView.swift in Sources */,
 				C3684172243854B500ADE33E /* Dictionary+Tools.swift in Sources */,
 				C368417F2438808E00ADE33E /* PieGraphicNHistogramVC.swift in Sources */,
 				C3042A4024380CD5009AF6DB /* ViewController.swift in Sources */,
 				C3042A3C24380CD5009AF6DB /* AppDelegate.swift in Sources */,
+				C36841B5243B7E1B00ADE33E /* CutImageDict.swift in Sources */,
 				C368415C2438251900ADE33E /* SecondLevelViewController.swift in Sources */,
 				C368416B2438375D00ADE33E /* SnowMainView.swift in Sources */,
 				C368418924388AB800ADE33E /* UIColor+Tools.swift in Sources */,
+				C36841B0243B5FA400ADE33E /* CutImageVC.swift in Sources */,
 				C368418D2438928900ADE33E /* UIAlertController+Tools.swift in Sources */,
+				C36841BC243BF98900ADE33E /* EraseImageDict.swift in Sources */,
 				C36841832438816600ADE33E /* PieGraphicView.swift in Sources */,
+				C368419D243AD7FC00ADE33E /* ContentManager.swift in Sources */,
 				C3684167243836DB00ADE33E /* SnowSurroundScreenVC.swift in Sources */,
 				C368416D2438501800ADE33E /* CodeViewerViewController.swift in Sources */,
 				C36841902438ABF400ADE33E /* DownloadProgressVC.swift in Sources */,
 				C36841462438191C00ADE33E /* MainTableViewCell.swift in Sources */,
+				C36841B8243BF61B00ADE33E /* EraseImageVC.swift in Sources */,
 				C36841782438648600ADE33E /* CodePageViewController.swift in Sources */,
+				C3C6CD75243C3C01008F3EE7 /* GestureUnlockDict.swift in Sources */,
+				C36841C5243C070700ADE33E /* LockView.swift in Sources */,
 				C3042A3E24380CD5009AF6DB /* SceneDelegate.swift in Sources */,
+				C36841BF243C02AB00ADE33E /* GestureUnlockVC.swift in Sources */,
 				C368418B24388CC300ADE33E /* BaseViewController.swift in Sources */,
 				C36841852438817100ADE33E /* HistgramView.swift in Sources */,
 				C3684187243881CD00ADE33E /* Array+Tools.swift in Sources */,
+				C36841C3243C05FF00ADE33E /* UnLockBackGroundView.swift in Sources */,
+				C36841A7243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift in Sources */,
+				C36841A3243AF91B00ADE33E /* SnowSurroundScreenDict.swift in Sources */,
 				C368419B2438CA0A00ADE33E /* UIImage+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

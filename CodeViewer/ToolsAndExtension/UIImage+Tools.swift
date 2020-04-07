@@ -9,6 +9,22 @@
 import UIKit
 
 extension UIImage {
+    
+    static func captureImageWithView(view: UIView) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0)
+        
+        let context = UIGraphicsGetCurrentContext()!
+        
+        view.layer.render(in: context)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    
     static func createCircleImage(with image: UIImage, andBoundsWidth borderWidth: CGFloat, boundColor: UIColor) -> UIImage {
         let imageW = image.size.width
         let imageH = image.size.height
@@ -42,4 +58,5 @@ extension UIImage {
         
         return finalImage
     }
+    
 }

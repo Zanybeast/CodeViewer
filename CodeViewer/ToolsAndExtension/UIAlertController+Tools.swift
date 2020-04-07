@@ -23,4 +23,26 @@ extension UIAlertController {
         return alertVC
         
     }
+    
+    static func initWithDoubleAction(alertTitle: String?,
+                                    alertMessage: String?,
+                                    alertStyle: UIAlertController.Style,
+                                    leftActionTitle: String?,
+                                    leftActionStyle: UIAlertAction.Style,
+                                    leftHandler: ((UIAlertAction) -> Void)?,
+                                    rightActionTitle: String?,
+                                    rightActionStyle: UIAlertAction.Style,
+                                    rightHandler: ((UIAlertAction) -> Void)? ) -> UIAlertController {
+        let alertVC = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        
+        let leftAction = UIAlertAction(title: leftActionTitle, style: leftActionStyle, handler: leftHandler)
+        
+        let rightAction = UIAlertAction(title: rightActionTitle, style: rightActionStyle, handler: rightHandler)
+        
+        alertVC.addAction(leftAction)
+        alertVC.addAction(rightAction)
+        
+        return alertVC
+        
+    }
 }

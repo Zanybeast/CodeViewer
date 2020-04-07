@@ -1,16 +1,14 @@
 //
-//  PieGraphicNHistogramVC.swift
+//  GestureUnlockVC.swift
 //  CodeViewer
 //
-//  Created by 曾钊 on 2020/4/4.
+//  Created by 曾钊 on 2020/4/7.
 //  Copyright © 2020 曾钊. All rights reserved.
 //
 
 import UIKit
 
-class PieGraphicNHistogramVC: BaseViewController {
-    
-
+class GestureUnlockVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

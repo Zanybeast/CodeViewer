@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GestureUnlockVC" customModule="CodeViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UnLockBackGroundView" customModule="CodeViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edy-Vi-uB2" customClass="LockView" customModule="CodeViewer" customModuleProvider="target">
+                    <rect key="frame" x="57" y="298" width="300" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="3bh-CU-JcT"/>
+                        <constraint firstAttribute="height" constant="300" id="Cf8-Rw-xsS"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="MQc-g9-OsB" appends="YES" id="3k0-vr-eqN"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="edy-Vi-uB2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="22E-kp-8lR"/>
+                <constraint firstItem="edy-Vi-uB2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Uiq-GP-rlv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="MQc-g9-OsB">
+            <connections>
+                <action selector="pan:" destination="edy-Vi-uB2" id="eG2-nI-ncP"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>

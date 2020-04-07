@@ -4,14 +4,22 @@
 <dict>
 	<key>BaseUI</key>
 	<array>
-		<string>NameCanWe</string>
-		<string>SoTouch</string>
+		<string>0NameCanWe</string>
+		<string>0SoTouch</string>
 	</array>
 	<key>CoreAnimation</key>
 	<array>
-		<string>SnowSurroundScreen</string>
-		<string>PieGraphicNHistogram</string>
-		<string>DownloadProgress</string>
+		<string>0GestureUnlock</string>
+		<string>0EraseImage</string>
+		<string>0SnowSurroundScreen</string>
+		<string>0CutImage</string>
+		<string>0PieGraphicNHistogram</string>
+		<string>0DownloadProgress</string>
+	</array>
+	<key>NetworkRequest</key>
+	<array>
+		<string>0NothingTose</string>
+		<string>2Ok</string>
 	</array>
 </dict>
 </plist>

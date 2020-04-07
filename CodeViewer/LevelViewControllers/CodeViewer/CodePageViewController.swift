@@ -16,6 +16,8 @@ class CodePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textView.contentInsetAdjustmentBehavior = .never
 
         let highlightr = Highlightr()
         highlightr?.setTheme(to: "xcode")

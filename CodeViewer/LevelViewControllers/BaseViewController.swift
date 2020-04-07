@@ -10,7 +10,32 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    var dict: Dictionary<String, String>?
+    var dict: Dictionary<String, String>? {
+        set {}
+        get {
+            var dictRes: Dictionary<String, String>?
+            if let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+                //Get the className depending on the class
+                let classStr = NSStringFromClass(Self.self.classForCoder())
+                let subStr = classStr.split(separator: ".")
+                var thisClassStr = String(subStr.last!)
+                //Remove the last two character for the name of the class is "xxxVC"
+                thisClassStr.removeLast()
+                thisClassStr.removeLast()
+                //Add the "Dict" so that relative dictionary named as "xxxDict"
+                thisClassStr = thisClassStr + "Dict"
+                
+                //Using the className to generate the class
+                let dictClass: AnyClass? = NSClassFromString(nameSpace + "." + thisClassStr)
+                //Get the dictionary related to the class
+                if let thisDict = dictClass as? BaseDict.Type {
+                    dictRes = thisDict.init().dict
+                }
+            }
+            
+            return dictRes
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +58,4 @@ class BaseViewController: UIViewController {
         }
     }
     
-
 }

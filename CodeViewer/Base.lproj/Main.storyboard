@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-I2-LFI">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="163" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MainCell" id="Nm2-yY-F0E">
@@ -29,11 +29,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1e-WO-2NU">
+                                <rect key="frame" x="10" y="98" width="394" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wOm-Dt-Erv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Show HomePage Code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rd1-jB-6vT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="OXe-I2-LFI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7cZ-gU-OcN"/>
+                            <constraint firstItem="K1e-WO-2NU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Jw8-jh-sXT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K1e-WO-2NU" secondAttribute="trailing" constant="10" id="MKf-VY-PAr"/>
                             <constraint firstAttribute="bottom" secondItem="OXe-I2-LFI" secondAttribute="bottom" id="P0N-ou-Ep1"/>
+                            <constraint firstItem="OXe-I2-LFI" firstAttribute="top" secondItem="K1e-WO-2NU" secondAttribute="bottom" constant="5" id="dBR-fV-0BB"/>
+                            <constraint firstItem="K1e-WO-2NU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wdT-Uj-mVi"/>
                             <constraint firstItem="OXe-I2-LFI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yaN-aB-ICd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OXe-I2-LFI" secondAttribute="trailing" id="zxE-Uw-EAI"/>
                         </constraints>

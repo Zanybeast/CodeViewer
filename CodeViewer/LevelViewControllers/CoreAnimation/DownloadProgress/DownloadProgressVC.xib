@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadProgressVC" customModule="CodeViewer" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="Qey-bm-W3t" id="3jG-Iy-jAJ"/>
                 <outlet property="progressView" destination="cGo-FG-YGP" id="wBK-x6-jlY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,22 +34,45 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cX3-Hz-Ydp">
-                    <rect key="frame" x="18" y="405" width="378" height="31"/>
+                    <rect key="frame" x="38" y="405" width="338" height="31"/>
                     <connections>
                         <action selector="slider:" destination="-1" eventType="valueChanged" id="6GY-Zr-gZf"/>
                     </connections>
                 </slider>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qey-bm-W3t">
+                    <rect key="frame" x="20" y="515" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="vgc-xy-KZC"/>
+                    </constraints>
+                    <state key="normal" title="Capture Current View to Make a Screenshot">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="capture:" destination="-1" eventType="touchUpInside" id="81m-RM-jjF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="cGo-FG-YGP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0wW-6T-EkK"/>
                 <constraint firstItem="yvE-C4-MtO" firstAttribute="top" secondItem="cGo-FG-YGP" secondAttribute="bottom" constant="20" id="3ml-6a-RPK"/>
                 <constraint firstItem="cX3-Hz-Ydp" firstAttribute="top" secondItem="yvE-C4-MtO" secondAttribute="bottom" constant="30" id="8C8-XI-8EU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cX3-Hz-Ydp" secondAttribute="trailing" constant="20" id="Cbi-xm-pTD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cX3-Hz-Ydp" secondAttribute="trailing" constant="40" id="Cbi-xm-pTD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qey-bm-W3t" secondAttribute="trailing" constant="20" id="D7g-ma-3om"/>
                 <constraint firstItem="yvE-C4-MtO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="GmW-34-oq0"/>
                 <constraint firstItem="cGo-FG-YGP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="HPc-fV-HAc"/>
                 <constraint firstAttribute="trailing" secondItem="yvE-C4-MtO" secondAttribute="trailing" constant="20" id="MCJ-fW-uzm"/>
-                <constraint firstItem="cX3-Hz-Ydp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WMF-K9-Kn6"/>
+                <constraint firstItem="cX3-Hz-Ydp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="WMF-K9-Kn6"/>
+                <constraint firstItem="Qey-bm-W3t" firstAttribute="top" secondItem="cX3-Hz-Ydp" secondAttribute="bottom" constant="80" id="bTy-KF-5lc"/>
+                <constraint firstItem="Qey-bm-W3t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="e9W-Jq-xEb"/>
+                <constraint firstItem="Qey-bm-W3t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hDc-H0-K6g"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="146.65178571428569"/>

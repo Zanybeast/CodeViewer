@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CutImageVC" customModule="CodeViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="6tO-FS-owg" id="jWR-BB-FQa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naruto" translatesAutoresizingMaskIntoConstraints="NO" id="6tO-FS-owg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6tO-FS-owg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B7Y-mr-9ro"/>
+                <constraint firstItem="6tO-FS-owg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IL2-Up-CjN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6tO-FS-owg" secondAttribute="trailing" id="Lvl-FQ-tnI"/>
+                <constraint firstAttribute="bottom" secondItem="6tO-FS-owg" secondAttribute="bottom" id="w9c-iT-Xky"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Naruto" width="600" height="960"/>
+    </resources>
+</document>

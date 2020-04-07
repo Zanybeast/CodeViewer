@@ -10,24 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    let dict: Dictionary<String, String>? = MainContentDictionary().dict
+    
     @IBOutlet weak var tableView: UITableView!
-    
-    var sortedArrForTitle: [String]!
-    var contentDictionary: Dictionary<String, [String]>?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Retrieve data from plist to show the title on tableView
-        let dicPath = Bundle.main.path(forResource: "SecondLevelContent", ofType: "plist")
-        contentDictionary = NSDictionary(contentsOfFile: dicPath!) as? Dictionary<String, [String]>
-//        print(contentDictionary)
-        var array: [String] = []
-        for key in contentDictionary!.keys {
-            array.append(key)
-        }
-//        print(sortedArrForTitle)
-        sortedArrForTitle = array.sorted()
         
         //Set tableView properties
         tableView.delegate = self
@@ -39,10 +27,21 @@ class ViewController: UIViewController {
         //Register Cell For tableView
         tableView.register(UINib.init(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainReuseCell")
         
-        
     }
 
-
+    @IBAction func clickToCode(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "CodeViewerViewController", bundle: nil)
+        let codeViewerVC = storyboard.instantiateInitialViewController() as! CodeViewerViewController
+        if let safeDict = dict {
+            codeViewerVC.contentDict = safeDict
+            navigationController?.pushViewController(codeViewerVC, animated: true)
+        } else {
+            let alertVC = UIAlertController.initWithAlertAction(alertTitle: "Warning", alertMessage: "No code to record, wait for implementation", alertStyle: .alert, actionTitle: "OK", actionStyle: .default, handler: nil)
+            
+            self.present(alertVC, animated: true, completion: nil)
+        }
+    }
+    
 }
 
 //MARK: - TableView DataSource And Delegate
@@ -52,14 +51,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return cellText.count
-        return sortedArrForTitle.count
+
+        return ContentManager.shared.themes?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainReuseCell", for: indexPath) as! MainTableViewCell
         
-        cell.label.text = sortedArrForTitle![indexPath.row]
+        cell.label.text = ContentManager.shared.sortedThemes()![indexPath.row]
         
         return cell
     }
@@ -67,12 +66,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let key = sortedArrForTitle[indexPath.row]
-        let content = contentDictionary![key]
+        let key = ContentManager.shared.sortedThemes()![indexPath.row]
         
         let storyBoard = UIStoryboard.init(name: "SecondLevel", bundle: nil)
         let secondVC = storyBoard.instantiateInitialViewController() as! SecondLevelViewController
-        secondVC.content = content
+        secondVC.key = key
         navigationController?.pushViewController(secondVC, animated: true)
         
     }
