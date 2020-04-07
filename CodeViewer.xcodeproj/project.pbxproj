@@ -55,7 +55,13 @@
 		C36841C0243C02AB00ADE33E /* GestureUnlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */; };
 		C36841C3243C05FF00ADE33E /* UnLockBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841C2243C05FF00ADE33E /* UnLockBackGroundView.swift */; };
 		C36841C5243C070700ADE33E /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36841C4243C070700ADE33E /* LockView.swift */; };
+		C36E712C243CBC9E00452733 /* PaintBoardDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E712B243CBC9E00452733 /* PaintBoardDict.swift */; };
 		C3C6CD75243C3C01008F3EE7 /* GestureUnlockDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */; };
+		C3C6CD78243C47A3008F3EE7 /* PaintBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD76243C47A3008F3EE7 /* PaintBoardVC.swift */; };
+		C3C6CD79243C47A3008F3EE7 /* PaintBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C6CD77243C47A3008F3EE7 /* PaintBoardVC.xib */; };
+		C3C6CD7C243C5942008F3EE7 /* PBDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD7B243C5942008F3EE7 /* PBDrawView.swift */; };
+		C3C6CD7E243C5961008F3EE7 /* PBDrawPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD7D243C5961008F3EE7 /* PBDrawPath.swift */; };
+		C3C6CD80243C93B0008F3EE7 /* TimeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CD7F243C93B0008F3EE7 /* TimeTools.swift */; };
 		E05DB8C798A9B1B0FE1FE182 /* Pods_CodeViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FB3F9AB8D02573E5BFB8C7 /* Pods_CodeViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,7 +119,13 @@
 		C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureUnlockVC.xib; sourceTree = "<group>"; };
 		C36841C2243C05FF00ADE33E /* UnLockBackGroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnLockBackGroundView.swift; sourceTree = "<group>"; };
 		C36841C4243C070700ADE33E /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		C36E712B243CBC9E00452733 /* PaintBoardDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintBoardDict.swift; sourceTree = "<group>"; };
 		C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureUnlockDict.swift; sourceTree = "<group>"; };
+		C3C6CD76243C47A3008F3EE7 /* PaintBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintBoardVC.swift; sourceTree = "<group>"; };
+		C3C6CD77243C47A3008F3EE7 /* PaintBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaintBoardVC.xib; sourceTree = "<group>"; };
+		C3C6CD7B243C5942008F3EE7 /* PBDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBDrawView.swift; sourceTree = "<group>"; };
+		C3C6CD7D243C5961008F3EE7 /* PBDrawPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBDrawPath.swift; sourceTree = "<group>"; };
+		C3C6CD7F243C93B0008F3EE7 /* TimeTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +253,7 @@
 				C368418824388AB800ADE33E /* UIColor+Tools.swift */,
 				C368418C2438928900ADE33E /* UIAlertController+Tools.swift */,
 				C368419A2438CA0A00ADE33E /* UIImage+Tools.swift */,
+				C3C6CD7F243C93B0008F3EE7 /* TimeTools.swift */,
 			);
 			path = ToolsAndExtension;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 				C36841B2243B5FAA00ADE33E /* CutImage */,
 				C36841BA243BF62000ADE33E /* EraseImage */,
 				C36841C1243C02B000ADE33E /* GestureUnlock */,
+				C3C6CD7A243C47A7008F3EE7 /* PaintBoard */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -316,6 +330,7 @@
 				C36841B4243B7E1B00ADE33E /* CutImageDict.swift */,
 				C3C6CD74243C3C01008F3EE7 /* GestureUnlockDict.swift */,
 				C36841BB243BF98900ADE33E /* EraseImageDict.swift */,
+				C36E712B243CBC9E00452733 /* PaintBoardDict.swift */,
 			);
 			path = CoreAnimationDict;
 			sourceTree = "<group>";
@@ -338,6 +353,17 @@
 				C36841BE243C02AB00ADE33E /* GestureUnlockVC.xib */,
 			);
 			path = GestureUnlock;
+			sourceTree = "<group>";
+		};
+		C3C6CD7A243C47A7008F3EE7 /* PaintBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C3C6CD76243C47A3008F3EE7 /* PaintBoardVC.swift */,
+				C3C6CD7B243C5942008F3EE7 /* PBDrawView.swift */,
+				C3C6CD7D243C5961008F3EE7 /* PBDrawPath.swift */,
+				C3C6CD77243C47A3008F3EE7 /* PaintBoardVC.xib */,
+			);
+			path = PaintBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +440,7 @@
 				C36841B9243BF61B00ADE33E /* EraseImageVC.xib in Resources */,
 				C36841792438648600ADE33E /* CodePageViewController.xib in Resources */,
 				C368415A2438250000ADE33E /* SecondLevel.storyboard in Resources */,
+				C3C6CD79243C47A3008F3EE7 /* PaintBoardVC.xib in Resources */,
 				C36841C0243C02AB00ADE33E /* GestureUnlockVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,10 +496,12 @@
 			files = (
 				C36841A9243B0C2100ADE33E /* DownloadProgressDict.swift in Sources */,
 				C36841A5243B00DD00ADE33E /* BaseDict.swift in Sources */,
+				C3C6CD80243C93B0008F3EE7 /* TimeTools.swift in Sources */,
 				C36841A0243AF83A00ADE33E /* MainContentDictionary.swift in Sources */,
 				C36841942438ADE800ADE33E /* DownloadProgressView.swift in Sources */,
 				C3684172243854B500ADE33E /* Dictionary+Tools.swift in Sources */,
 				C368417F2438808E00ADE33E /* PieGraphicNHistogramVC.swift in Sources */,
+				C3C6CD7C243C5942008F3EE7 /* PBDrawView.swift in Sources */,
 				C3042A4024380CD5009AF6DB /* ViewController.swift in Sources */,
 				C3042A3C24380CD5009AF6DB /* AppDelegate.swift in Sources */,
 				C36841B5243B7E1B00ADE33E /* CutImageDict.swift in Sources */,
@@ -495,8 +524,11 @@
 				C3042A3E24380CD5009AF6DB /* SceneDelegate.swift in Sources */,
 				C36841BF243C02AB00ADE33E /* GestureUnlockVC.swift in Sources */,
 				C368418B24388CC300ADE33E /* BaseViewController.swift in Sources */,
+				C3C6CD78243C47A3008F3EE7 /* PaintBoardVC.swift in Sources */,
 				C36841852438817100ADE33E /* HistgramView.swift in Sources */,
 				C3684187243881CD00ADE33E /* Array+Tools.swift in Sources */,
+				C3C6CD7E243C5961008F3EE7 /* PBDrawPath.swift in Sources */,
+				C36E712C243CBC9E00452733 /* PaintBoardDict.swift in Sources */,
 				C36841C3243C05FF00ADE33E /* UnLockBackGroundView.swift in Sources */,
 				C36841A7243B0B6D00ADE33E /* PieGraphicNHistogramDict.swift in Sources */,
 				C36841A3243AF91B00ADE33E /* SnowSurroundScreenDict.swift in Sources */,

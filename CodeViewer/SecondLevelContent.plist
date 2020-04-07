@@ -9,12 +9,13 @@
 	</array>
 	<key>CoreAnimation</key>
 	<array>
-		<string>0GestureUnlock</string>
-		<string>0EraseImage</string>
-		<string>0SnowSurroundScreen</string>
-		<string>0CutImage</string>
-		<string>0PieGraphicNHistogram</string>
-		<string>0DownloadProgress</string>
+		<string>3GestureUnlock</string>
+		<string>3EraseImage</string>
+		<string>3SnowSurroundScreen</string>
+		<string>3CutImage</string>
+		<string>3PieGraphicNHistogram</string>
+		<string>3DownloadProgress</string>
+		<string>2PaintBoard</string>
 	</array>
 	<key>NetworkRequest</key>
 	<array>

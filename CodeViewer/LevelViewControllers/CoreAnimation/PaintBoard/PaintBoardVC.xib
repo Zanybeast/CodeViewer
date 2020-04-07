@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaintBoardVC" customModule="CodeViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="drawView" destination="qfK-DD-mQP" id="hxZ-qh-vpo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-Wx-agc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5Gv-Xk-cIS"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="eV0-o7-JyS"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Clear" id="crx-Ic-nsU">
+                            <connections>
+                                <action selector="clear:" destination="-1" id="iXs-1l-N0M"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Undo" id="HH4-RN-iVL">
+                            <connections>
+                                <action selector="undo:" destination="-1" id="M8n-ny-wY8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Erase" id="Y3y-gd-afg">
+                            <connections>
+                                <action selector="erase:" destination="-1" id="5oU-JZ-T7C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Album" id="R0e-ue-Pn1">
+                            <connections>
+                                <action selector="toAlbum:" destination="-1" id="e3R-Wf-iW0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="95" style="plain" systemItem="fixedSpace" id="lX1-zX-Xmj"/>
+                        <barButtonItem title="Save" id="PzH-zU-pjw">
+                            <connections>
+                                <action selector="save:" destination="-1" id="9nD-2p-edc"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3t-Qq-yrQ">
+                    <rect key="frame" x="0.0" y="98" width="414" height="90"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="let-Pa-aBr">
+                            <rect key="frame" x="20" y="0.0" width="374" height="45"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me2-EN-khJ" userLabel="BlackView">
+                                    <rect key="frame" x="0.0" y="0.0" width="86" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7U-zt-CgP" userLabel="Black">
+                                            <rect key="frame" x="5" y="5" width="76" height="35"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="colorChange:" destination="-1" eventType="touchUpInside" id="lkn-Eq-2Oq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Z7U-zt-CgP" secondAttribute="bottom" constant="5" id="LsP-zj-3OA"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z7U-zt-CgP" secondAttribute="trailing" constant="5" id="QpV-4n-KHm"/>
+                                        <constraint firstItem="Z7U-zt-CgP" firstAttribute="leading" secondItem="me2-EN-khJ" secondAttribute="leading" constant="5" id="ZHb-fw-sp2"/>
+                                        <constraint firstItem="Z7U-zt-CgP" firstAttribute="top" secondItem="me2-EN-khJ" secondAttribute="top" constant="5" id="Zzn-pr-eqn"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-jQ-5Sq" userLabel="RedView">
+                                    <rect key="frame" x="96" y="0.0" width="86" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR1-YI-xGl" userLabel="Red">
+                                            <rect key="frame" x="5" y="5" width="76" height="35"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="colorChange:" destination="-1" eventType="touchUpInside" id="xgx-9Y-i1j"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="NR1-YI-xGl" secondAttribute="trailing" constant="5" id="HMN-7R-REy"/>
+                                        <constraint firstAttribute="bottom" secondItem="NR1-YI-xGl" secondAttribute="bottom" constant="5" id="Zrh-SZ-Dus"/>
+                                        <constraint firstItem="NR1-YI-xGl" firstAttribute="top" secondItem="JOB-jQ-5Sq" secondAttribute="top" constant="5" id="axb-EP-ENa"/>
+                                        <constraint firstItem="NR1-YI-xGl" firstAttribute="leading" secondItem="JOB-jQ-5Sq" secondAttribute="leading" constant="5" id="pnH-VX-PwU"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQL-ON-1DF" userLabel="GreenView">
+                                    <rect key="frame" x="192" y="0.0" width="86" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a94-Zz-pqw" userLabel="Green">
+                                            <rect key="frame" x="5" y="5" width="76" height="35"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="colorChange:" destination="-1" eventType="touchUpInside" id="THf-Ma-pZO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="a94-Zz-pqw" secondAttribute="trailing" constant="5" id="8hL-lK-UGm"/>
+                                        <constraint firstItem="a94-Zz-pqw" firstAttribute="top" secondItem="xQL-ON-1DF" secondAttribute="top" constant="5" id="Ndg-fw-6q6"/>
+                                        <constraint firstAttribute="bottom" secondItem="a94-Zz-pqw" secondAttribute="bottom" constant="5" id="kAd-xX-c2a"/>
+                                        <constraint firstItem="a94-Zz-pqw" firstAttribute="leading" secondItem="xQL-ON-1DF" secondAttribute="leading" constant="5" id="kxn-bm-pIJ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lun-Ft-4HN" userLabel="BlueView">
+                                    <rect key="frame" x="288" y="0.0" width="86" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-cJ-QUt" userLabel="Blue">
+                                            <rect key="frame" x="5" y="5" width="76" height="35"/>
+                                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="colorChange:" destination="-1" eventType="touchUpInside" id="FhC-NR-YXO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="nqt-cJ-QUt" secondAttribute="bottom" constant="5" id="67p-Hl-6eA"/>
+                                        <constraint firstAttribute="trailing" secondItem="nqt-cJ-QUt" secondAttribute="trailing" constant="5" id="A8P-2H-e0S"/>
+                                        <constraint firstItem="nqt-cJ-QUt" firstAttribute="top" secondItem="lun-Ft-4HN" secondAttribute="top" constant="5" id="oIg-ZD-vdy"/>
+                                        <constraint firstItem="nqt-cJ-QUt" firstAttribute="leading" secondItem="lun-Ft-4HN" secondAttribute="leading" constant="5" id="zhQ-BJ-KRs"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-Ab-vop">
+                            <rect key="frame" x="38" y="55" width="338" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ToU-Xi-UiD"/>
+                            </constraints>
+                            <connections>
+                                <action selector="widthChange:" destination="-1" eventType="valueChanged" id="VPx-0N-ga6"/>
+                            </connections>
+                        </slider>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="let-Pa-aBr" firstAttribute="leading" secondItem="o3t-Qq-yrQ" secondAttribute="leading" constant="20" id="Oyw-W8-i1Z"/>
+                        <constraint firstAttribute="trailing" secondItem="let-Pa-aBr" secondAttribute="trailing" constant="20" id="RKU-L2-T5Y"/>
+                        <constraint firstAttribute="trailing" secondItem="1cl-Ab-vop" secondAttribute="trailing" constant="40" id="cWT-f2-T7n"/>
+                        <constraint firstItem="1cl-Ab-vop" firstAttribute="leading" secondItem="o3t-Qq-yrQ" secondAttribute="leading" constant="40" id="e1X-Q1-ipF"/>
+                        <constraint firstAttribute="bottom" secondItem="1cl-Ab-vop" secondAttribute="bottom" constant="5" id="mVz-8W-miU"/>
+                        <constraint firstItem="let-Pa-aBr" firstAttribute="top" secondItem="o3t-Qq-yrQ" secondAttribute="top" id="vUb-CE-vuy"/>
+                        <constraint firstItem="1cl-Ab-vop" firstAttribute="top" secondItem="let-Pa-aBr" secondAttribute="bottom" constant="10" id="yJI-ki-vhw"/>
+                        <constraint firstAttribute="height" constant="90" id="yqm-Qo-EPc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfK-DD-mQP" customClass="PBDrawView" customModule="CodeViewer" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="188" width="414" height="708"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="o3t-Qq-yrQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="572-RR-zKy"/>
+                <constraint firstItem="a3C-Wx-agc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8Hl-et-s1F"/>
+                <constraint firstItem="a3C-Wx-agc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8xn-h7-QIi"/>
+                <constraint firstItem="a3C-Wx-agc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="E3s-cF-PPZ"/>
+                <constraint firstItem="qfK-DD-mQP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Lu0-Sx-Web"/>
+                <constraint firstAttribute="bottom" secondItem="qfK-DD-mQP" secondAttribute="bottom" id="MGu-3q-3bt"/>
+                <constraint firstItem="o3t-Qq-yrQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="btt-Le-aYW"/>
+                <constraint firstItem="qfK-DD-mQP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dIp-Cv-wvC"/>
+                <constraint firstItem="qfK-DD-mQP" firstAttribute="top" secondItem="o3t-Qq-yrQ" secondAttribute="bottom" id="fau-xd-JSr"/>
+                <constraint firstItem="o3t-Qq-yrQ" firstAttribute="top" secondItem="a3C-Wx-agc" secondAttribute="bottom" constant="10" id="kzY-VJ-VQI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+</document>
